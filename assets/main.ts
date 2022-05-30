@@ -7,7 +7,6 @@ declare global {
   interface Window {
     // algolia; @see search.ts
     docsearch?(options: any): any;
-    Coveo?: any;
   }
 }
 
