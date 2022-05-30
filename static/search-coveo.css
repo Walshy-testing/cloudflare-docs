@@ -69,12 +69,6 @@
   color: var(--code-orange) !important;
 }
 
-.coveo-result-cell .CoveoFieldValue {
-  font-style: italic;
-  font-size: 85%;
-  margin-right: 15px;
-}
-
 .DocsMarkdown ul {
   list-style: none !important;
 }
