@@ -64,18 +64,7 @@
 
     // Initialize the framework by targeting the root in the interface.
     // It does not have to be the document body.
-    const root = document.getElementById('searchresults')
-    coveo.init(root);
-
-    // Hacky fix to manually control search/loading icons
-    function showLoadingToggle(bool) {
-      const search = document.querySelector("span.coveo-search-button")
-      const loading = document.querySelector("span.coveo-search-button-loading")
-      search.style.display = bool ? "none" : "";
-      loading.style.display = bool ? "" : "none";
-    }
-    coveo.$$(root).on('newQuery', () => showLoadingToggle(true))
-    coveo.$$(root).on('newResultsDisplayed', () => showLoadingToggle(false))
+    coveo.init(document.getElementById('searchresults'));
   }
 
   // init
